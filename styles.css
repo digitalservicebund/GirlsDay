@@ -1,5 +1,61 @@
-.text-1 {
-	background-color: black;
-	padding: 10px;
-	color: white;
+/* Set font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style headings */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style paragraphs */
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Style divisions */
+div {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Style comments */
+.comment {
+  color: gray;
+  font-style: italic;
 }
