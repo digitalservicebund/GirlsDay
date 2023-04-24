@@ -7,14 +7,13 @@ body {
 /* Style headings */
 h1 {
   font-size: 24px;
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
 h2 {
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -32,7 +31,6 @@ p {
 
 /* Style divisions */
 div {
-  border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -41,13 +39,32 @@ div {
 table {
   border-collapse: collapse;
   width: 100%;
+  border-style: hidden;
+}
+
+.codeblock {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-size: 15px;
+  font-family: monospace;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
 
 th,
 td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: 1px #ddd;
+  border-style: none;
+  padding: 4px;
   text-align: left;
+  vertical-align: middle;
+  width: 50%;
 }
 
 th {
