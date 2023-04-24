@@ -10,7 +10,7 @@
     <a href="./index.html">Zurück</a>
     <h1>HTML Elemente - Übersicht</h1>
 
-    <div>
+    <div class="box">
       <h2>Absätze</h2>
       <p>
         Absätze werden verwendet, um zusammengehörige Textblöcke darzustellen.
@@ -39,7 +39,7 @@
       </table>
     </div>
 
-    <div>
+    <div class="box">
       <h2>Überschriften</h2>
       <p>
         Überschriften (headings) beschreiben den folgenden Inhalt und werden
@@ -63,141 +63,146 @@
       </table>
     </div>
 
-    <h2>Listen</h2>
-    <p>
-      Listen werden verwendet, um Elemente auf einer Webseite in einer
-      bestimmten Reihenfolge darzustellen. Es gibt zwei Arten von Listen:
-      ungeordnete Listen und geordnete Listen.
-    </p>
-    <table>
-      <tr>
-        <td>
-          <h3>Ungeordnete Liste</h3>
-          <pre class="codeblock">
+    <div class="box">
+      <h2>Listen</h2>
+      <p>
+        Listen werden verwendet, um Elemente auf einer Webseite in einer
+        bestimmten Reihenfolge darzustellen. Es gibt zwei Arten von Listen:
+        ungeordnete Listen und geordnete Listen.
+      </p>
+      <table>
+        <tr>
+          <td>
+            <h3>Ungeordnete Liste</h3>
+            <pre class="codeblock">
 &lt;ul>
   &lt;li>Element 1&lt;/li>
   &lt;li>Element 2&lt;/li>
   &lt;li>Element 3&lt;/li>
 &lt;/ul></pre
-          >
-        </td>
-        <td>
-          <ul>
-            <li>Element 1</li>
-            <li>Element 2</li>
-            <li>Element 3</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h3>Geordnete Liste</h3>
-          <pre class="codeblock">
+            >
+          </td>
+          <td>
+            <ul>
+              <li>Element 1</li>
+              <li>Element 2</li>
+              <li>Element 3</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3>Geordnete Liste</h3>
+            <pre class="codeblock">
 &lt;ol>
   &lt;li>Element 1&lt;/li>
   &lt;li>Element 2&lt;/li>
   &lt;li>Element 3&lt;/li>
 &lt;/ol></pre
-          >
-        </td>
-        <td>
-          <ol>
-            <li>Element 1</li>
-            <li>Element 2</li>
-            <li>Element 3</li>
-          </ol>
-        </td>
-      </tr>
-    </table>
-
-    <h2>Links</h2>
-    <p>
-      Links werden verwendet, um Benutzer auf andere Webseiten oder zu anderen
-      Abschnitten der aktuellen Webseite zu führen.
-    </p>
-    <table>
-      <tr>
-        <td>
-          <code class="codeblock"
-            >&lt;a href="/index.html"> Relativer Link&lt;/a>
-          </code>
-        </td>
-        <td>
-          <a href="/index.html">Relativer Link</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <code class="codeblock">
-            &lt;a href="https://digitalservice.bund.de/"> Externer Link&lt;/a>
-          </code>
-        </td>
-        <td>
-          <a href="https://digitalservice.bund.de/">Externer Link</a>
-        </td>
-      </tr>
-    </table>
-
-    <h2>Bilder</h2>
-    <table>
-      <tr>
-        <td>
-          <p>
-            Bilder werden verwendet, um visuelle Elemente auf einer Webseite
-            darzustellen. Sie können verwendet werden, um Produkte zu
-            präsentieren, Orte zu zeigen oder einfach nur eine visuelle
-            Ergänzung zum Text zu bieten.
-          </p>
-          <code class="codeblock">
-            &lt;img src="bilder/bild1.jpg" alt="Beispielbild" />
-          </code>
-        </td>
-        <td>
-          <img src="bilder/bild1.jpg" alt="Beispielbild" />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Bilder können auch Links auf andere Seiten sein.</p>
-          <pre class="codeblock">
+            >
+          </td>
+          <td>
+            <ol>
+              <li>Element 1</li>
+              <li>Element 2</li>
+              <li>Element 3</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="box">
+      <h2>Links</h2>
+      <p>
+        Links werden verwendet, um Benutzer auf andere Webseiten oder zu anderen
+        Abschnitten der aktuellen Webseite zu führen.
+      </p>
+      <table>
+        <tr>
+          <td>
+            <code class="codeblock"
+              >&lt;a href="/index.html"> Relativer Link&lt;/a>
+            </code>
+          </td>
+          <td>
+            <a href="/index.html">Relativer Link</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <code class="codeblock">
+              &lt;a href="https://digitalservice.bund.de/"> Externer Link&lt;/a>
+            </code>
+          </td>
+          <td>
+            <a href="https://digitalservice.bund.de/">Externer Link</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="box">
+      <h2>Bilder</h2>
+      <table>
+        <tr>
+          <td>
+            <p>
+              Bilder werden verwendet, um visuelle Elemente auf einer Webseite
+              darzustellen. Sie können verwendet werden, um Produkte zu
+              präsentieren, Orte zu zeigen oder einfach nur eine visuelle
+              Ergänzung zum Text zu bieten.
+            </p>
+            <code class="codeblock">
+              &lt;img src="bilder/bild1.jpg" alt="Beispielbild" />
+            </code>
+          </td>
+          <td>
+            <img src="bilder/bild1.jpg" alt="Beispielbild" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Bilder können auch Links auf andere Seiten sein.</p>
+            <pre class="codeblock">
 &lt;a href="https://digitalservice.bund.de/">
   &lt;img src="bilder/bild1.jpg" alt="Beispielbild" />
 &lt;/a></pre
-          >
-        </td>
-        <td>
-          <a href="https://digitalservice.bund.de/">
-            <img src="bilder/bild1.jpg" alt="Beispielbild" />
-          </a>
-        </td>
-      </tr>
-    </table>
+            >
+          </td>
+          <td>
+            <a href="https://digitalservice.bund.de/">
+              <img src="bilder/bild1.jpg" alt="Beispielbild" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="box">
+      <h2>Divisions</h2>
+      <p>
+        Divisions werden verwendet, um verwandte Elemente zu gruppieren. Sie
+        haben keine visuelle Bedeutung, werden aber oft verwendet, um das
+        Styling zu erleichtern.
+      </p>
 
-    <h2>Divisions</h2>
-    <p>
-      Divisions werden verwendet, um verwandte Elemente zu gruppieren. Sie haben
-      keine visuelle Bedeutung, werden aber oft verwendet, um das Styling zu
-      erleichtern.
-    </p>
-
-    <table>
-      <tr>
-        <td>
-          <pre class="codeblock">
+      <table>
+        <tr>
+          <td>
+            <pre class="codeblock">
 &lt;div style="border: 1px solid gray">
   Äußeres div
   &lt;div style="background-color: aqua">Inneres div&lt;/div>
 &lt;/div>
 </pre
-          >
-        </td>
-        <td>
-          <div style="border: 1px solid gray">
-            Äußeres div
-            <div style="background-color: aqua">Inneres div</div>
-          </div>
-        </td>
-      </tr>
-    </table>
+            >
+          </td>
+          <td>
+            <div style="border: 1px solid gray">
+              Äußeres div
+              <div style="background-color: aqua">Inneres div</div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
