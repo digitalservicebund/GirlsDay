@@ -1,5 +1,11 @@
-.text-1 {
-	background-color: black;
-	padding: 10px;
-	color: white;
+#haupt_title {
+  text-align: center;
+  padding: 10px;
+  color: red;
+}
+
+.besonderer_absatz {
+  text-align: right;
+  color: white;
+  background-color: gray;
 }
