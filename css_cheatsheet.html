@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Basics</title>
+  <style>
+    /* CSS code goes here */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      color: #333333;
+    }
+
+    h1 {
+      color: #0099cc;
+      font-size: 36px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .box {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .box h2 {
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      margin-bottom: 0;
+    }
+
+    .btn {
+      background-color: #0099cc;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #0088b3;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="./index.html">Zurück</a>
+  <h1>CSS Cheatsheet</h1>
+
+  <div class="box">
+    <h2>Basics</h2>
+    <p>Mit CSS kann beschrieben werden, wie Elemente <i>aussehen</i> sollen. Dafür schreiben wir sogenannte CSS
+      Klassen:
+    </p>
+    <h4>Syntax einer CSS Klasse</h4>
+    <pre style="color:#000" id="selectable1">
+    <span style="font-weight:700">selector</span>{
+      <span style="color:#6d79de;font-weight:700">property</span>: <span style="color:#c5060b;font-style:italic">value</span>;
+      <span style="color:#6d79de;font-weight:700">property2</span>: <span style="color:#c5060b;font-style:italic">value2</span>;
+    }
+    </pre>
+
+
+  </div>
+
+  <div class="box">
+    <h2>Einbinden von Styles</h2>
+    <h4>Externe Styles</h4>
+    <pre style="color:#000">
+        <span style="color:#1c02ff">&lt;<span style="font-weight:700">link</span> <span style="font-style:italic">rel</span>=<span style="color:#d80800">"stylesheet"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"text/css"</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"/style.css"</span> /&gt;</span></pre>
+    <h4>Interne Styles</h4>
+    <pre style="color:#000">
+      &lt;<span style="font-weight:700">style</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"text/css"</span>&gt;
+        <span style="font-weight:700">div</span> { <span style="color:#6d79de;font-weight:700">color</span>: <span style="color:#c5060b;font-style:italic">#444</span>;}
+      &lt;/<span style="font-weight:700">style</span>&gt;
+    </pre>
+
+    <h4>Inline Styles</h4>
+    <div style="display: none;"><a class="preToEditor" title="Send to editor">✎</a></div>
+    <pre style="color:#000">
+        <span style="color:#1c02ff">&lt;<span style="font-weight:700">tag</span> <span style="font-style:italic">style</span>=<span style="color:#d80800">"property: value"</span>&gt;</span> <span style="color:#1c02ff">&lt;/<span style="font-weight:700">tag</span>&gt;</span>
+      </pre>
+    <div>
+      <p>Hier ist ein gutes<a href="https://wiki.selfhtml.org/wiki/CSS/Tutorials/Einstieg/Stylesheets_einbinden">
+          Tutorial
+          zu diesem Thema</a></p>
+      <i>Quelle: www.wiki.selfhtml</i>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>Selektoren</h2>
+    <p>Ein CSS-Selektor wird verwendet, um HTML-Elemente basierend auf ihrem Elementnamen, ihrer Klasse, ihrer ID,
+      ihren Attributen und mehr auszuwählen. Hier
+      sind einige Beispiele:</p>
+    <ul>
+      <li>Element Selektor: <code>h1</code>, <code>p</code>, <code>div</code>, etc.</li>
+      <li>Klassen S: <code>.classname</code></li>
+      <li>ID selector: <code>#idname</code></li>
+      <li>Attribute selector: <code>[attribute=value]</code></li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>Properties and Values</h2>
+    <p>CSS-Properties (Eigenschaften) definieren den Stil eines HTML-Elements. Hier sind einige gebräuchliche
+      Eigenschaften</p>
+    <ul>
+      <li><code>color</code>: legt die Farbe des Textes fest</li>
+      <li><code>background-color</code>: legt die Hintergrundfarbe eines Elements fest</li>
+      <li><code>font-size</code>: legt die Größe des Textes fest</li>
+      <li><code>padding</code>: legt den Innenabstand eines Elements fest</li>
+      <li><code>margin</code>: legt den Außenabstand eines Elements fest</li>
+      <li><code>border</code>: legt den Rahmen eines Elements fest</li>
+    </ul>
+
+    <p>CSS-Werte (Values) werden verwendet, um den Wert einer CSS-Eigenschaft zu definieren. Hier sind einige
+      Beispiele:</p>
+    <ul>
+      <li><code>color: #ffffff;</code></li>
+      <li><code>background-color: #0099cc;</code></li>
+      <li><code>font-size: 18px;</code></li>
+      <li><code>padding: 10px;</code></li>
+    </ul>
+    <div>
+      <p>Hier ist eine<a href="https://wiki.selfhtml.org/wiki/CSS/Eigenschaften">
+          eine Liste aller CSS Eigenschaften</a> und <a
+          href="https://wiki.selfhtml.org/wiki/CSS/Tutorials/Einstieg/Syntax">ein gutes Tutorial</a> zu diesem Thema</p>
+      <i>Quelle: www.wiki.selfhtml</i>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>Box Modell</h2>
+    <p>Das CSS-Box-Modell beschreibt das Layout eines HTML-Elements. Jedes Element ist von einem unsichtbaren
+      rechteckigen Rahmen umgeben, der aus Innenabstand (Padding), Außenabstand (Margin), Rahmen (Border) und dem
+      eigentlichen Inhalt des Elements besteht. </p>
+
+    <img src="bilder/box-model.png" alt="Box Modell" />
+
+    <p>Das Box-Modell kann mit CSS-Eigenschaften wie <code>padding</code>, <code>margin</code> und <code>border</code>
+      gesteuert werden.</p>
+
+    <p>Im Beispiel oben hat das Element eine Breite von 200 Pixeln und eine Höhe von 150 Pixeln. Der
+      <code>padding</code>-Wert beträgt 20 Pixel und erzeugt einen Innenabstand um den Inhalt des Elements. Der
+      <code>margin</code>-Wert beträgt ebenfalls 20 Pixel und erzeugt einen Außenabstand um das Element. Der
+      <code>border</code>-Wert von 1 Pixel definiert die Dicke des Elementrahmens.
+    </p>
+  </div>
