@@ -4,6 +4,8 @@
     <title>CSS Basics</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="assets/prism.css" rel="stylesheet" />
+    <script src="assets/prism.js"></script>
   </head>
 
   <body>
@@ -17,35 +19,25 @@
         Dafür schreiben wir sogenannte CSS Klassen:
       </p>
       <h4>Syntax einer CSS Klasse</h4>
-      <pre style="color: #000" id="selectable1">
-    <span style="font-weight:700">selector</span> {
-      <span style="color:#6d79de;font-weight:700">property</span>: <span style="color:#c5060b;font-style:italic">value</span>;
-      <span style="color:#6d79de;font-weight:700">property2</span>: <span style="color:#c5060b;font-style:italic">value2</span>;
-    }
-    </pre>
+      <pre><code class="language-css">selector {
+  property: value;
+  property2: value2;
+}</code></pre>
     </div>
 
     <div class="box">
       <h2>Einbinden von Styles</h2>
 
       <h4>Externe Styles (in einer anderen Datei)</h4>
-      <pre
-        style="color: #000"
-      ><span style="color:#1c02ff">&lt;<span style="font-weight:700">link</span> <span style="font-style:italic">rel</span>=<span style="color:#d80800">"stylesheet"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"text/css"</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"/style.css"</span> /&gt;</span></pre>
+      <pre><code class="language-html">&lt;link rel="stylesheet" type="text/css" href="/style.css" /&gt;</code></pre>
 
       <h4>Interne Styles (gesammelt in der selben Datei)</h4>
-      <pre style="color: #000">
-&lt;<span style="font-weight:700">style</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"text/css"</span>&gt;
-  <span style="font-weight:700">div</span> { <span style="color:#6d79de;font-weight:700">color</span>: <span style="color:#c5060b;font-style:italic">#444</span>;}
-&lt;/<span style="font-weight:700">style</span>&gt;</pre>
+      <pre><code class="language-html">&lt;style type="text/css"&gt;
+  div { color: #444;}
+&lt;/style&gt;</code></pre>
 
       <h4>Inline Styles (Direkt im Element)</h4>
-      <div style="display: none">
-        <a class="preToEditor" title="Send to editor">✎</a>
-      </div>
-      <pre
-        style="color: #000"
-      ><span style="color:#1c02ff">&lt;<span style="font-weight:700">tag</span> <span style="font-style:italic">style</span>=<span style="color:#d80800">"property: value"</span>&gt;</span> <span style="color:#1c02ff">&lt;/<span style="font-weight:700">tag</span>&gt;</span></pre>
+      <pre><code class="language-html">&lt;tag style="property: value"&gt; &lt;/tag&gt;</code></pre>
       <div>
         <p>
           Hier ist ein gutes
@@ -68,17 +60,20 @@
       <ul>
         <li>
           Element Selektor, für alle Elemente eines bestimmten Types (zB
-          <code>h1</code>, <code>p</code>, <code>div</code>, ...)
+          <code class="language-html">h1</code>,
+          <code class="language-html">p</code>,
+          <code class="language-html">div</code>, ...)
         </li>
         <li>
           Class Selektor, für alle Elemente die einer bestimmten Klasse
-          zugewiesen wurden (zB <code>.box</code> selektiert
-          <code>&lt;div class="box"></code>)
+          zugewiesen wurden (zB
+          <code class="language-css">.box</code> selektiert
+          <code class="language-html">&lt;div class="box"></code>)
         </li>
         <li>
           ID selector, für ein bestimmtes Element mit einer eindeutigen ID (zB
-          <code>#navigationBar</code> selektiert
-          <code>&lt;div id="navigationBar"></code>)
+          <code class="language-css">#navigationBar</code> selektiert
+          <code class="language-html">&lt;div id="navigationBar"></code>)
         </li>
       </ul>
     </div>
@@ -90,27 +85,39 @@
         Hier sind einige gebräuchliche Eigenschaften
       </p>
       <ul>
-        <li><code>color</code>: legt die Farbe des Textes fest</li>
         <li>
-          <code>background-color</code>: legt die Hintergrundfarbe eines
+          <code class="language-css">color</code> legt die Farbe des Textes fest
+        </li>
+        <li>
+          <code class="language-css">background-color</code> legt die
+          Hintergrundfarbe eines Elements fest
+        </li>
+        <li>
+          <code class="language-css">font-size</code> legt die Größe des Textes
+          fest
+        </li>
+        <li>
+          <code class="language-css">padding</code> legt den Innenabstand eines
           Elements fest
         </li>
-        <li><code>font-size</code>: legt die Größe des Textes fest</li>
-        <li><code>padding</code>: legt den Innenabstand eines Elements fest</li>
-        <li><code>margin</code>: legt den Außenabstand eines Elements fest</li>
-        <li><code>border</code>: legt den Rahmen eines Elements fest</li>
+        <li>
+          <code class="language-css">margin</code> legt den Außenabstand eines
+          Elements fest
+        </li>
+        <li>
+          <code class="language-css">border</code> legt den Rahmen eines
+          Elements fest
+        </li>
       </ul>
 
       <p>
         CSS-Werte (Values) werden verwendet, um den Wert einer CSS-Eigenschaft
         zu definieren. Hier sind einige Beispiele:
       </p>
-      <ul>
-        <li><code>color: #ffffff;</code></li>
-        <li><code>background-color: #0099cc;</code></li>
-        <li><code>font-size: 18px;</code></li>
-        <li><code>padding: 10px;</code></li>
-      </ul>
+      <pre><code class="language-css">color: #ffffff;
+background-color: #0099cc;
+font-size: 18px;
+padding: 10px;</code></pre>
       <div>
         <p>
           Hier ist eine<a

@@ -45,21 +45,6 @@ table {
   border-style: hidden;
 }
 
-.codeblock {
-  background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-left: 3px solid #f36d33;
-  color: #666;
-  page-break-inside: avoid;
-  font-size: 15px;
-  font-family: monospace;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  display: block;
-  word-wrap: break-word;
-}
-
 th,
 td {
   border: 1px #ddd;
