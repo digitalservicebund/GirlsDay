@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+}
+
+.zentriert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.correct {
+  background-color: green;
+}
+
+button {
+  font-size: x-large;
+  padding: 8px;
+}
