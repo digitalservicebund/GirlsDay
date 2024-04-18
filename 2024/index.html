@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My HTML Learning Page</title>
+  <title>Girls’Day@DigitalService</title>
   <style>
     /* Add some basic styles for better appearance */
     body {
@@ -39,6 +39,19 @@
       background-color: #fff;
       border-radius: 5px;
       flex-grow: 1;
+    }
+
+    .horizontal-section {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+    }
+
+    .header-section {
+      background-image: url('./bilder/bild1.jpeg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
     }
 
     /* CSS classes to play around */
@@ -79,24 +92,20 @@
     .small {
       font-size: 12px;
     }
-
-    .horizontal {
-      display: flex;
-      flex-direction: row;
-      flex-grow: 1;
-    }
   </style>
 </head>
 
 <body>
-  <header>
+  <header class="header-section">
     <h1>Girls’Day@DigitalService</h1>
     <h2>IT-Entwicklerinnen für ein digitales Deutschland</h2>
   </header>
   <nav>
-    <a href="#section1">Section 1</a>
-    <a href="#section2">Section 2</a>
-    <a href="#section3">Section 3</a>
+    <a href="#section1">Abschnitt 1</a>
+    <a href="#section2">Abschnitt 2</a>
+    <a href="#section3">Abschnitt 3</a>
+    <a href="#section4">Abschnitt 4</a>
+    <a href="#section5">Abschnitt 5</a>
   </nav>
   <section id="section1">
     <h2 class="pink">Abschnitt 1</h2>
@@ -132,7 +141,7 @@
     </form>
   </section>
 
-  <div class="horizontal">
+  <div class="horizontal-section">
     <section id="section4">
       <h2 class="purple">Abschnitt 4</h2>
 
