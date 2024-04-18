@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Basics</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="assets/prism.css" rel="stylesheet" />
+    <script src="assets/prism.js"></script>
+  </head>
+
+  <body>
+    <a href="./index.html">Zurück</a>
+    <h1>CSS Cheatsheet</h1>
+
+    <div class="box">
+      <h2>Basics</h2>
+      <p>
+        Mit CSS kann beschrieben werden, wie Elemente <i>aussehen</i> sollen.
+        Dafür schreiben wir sogenannte CSS Klassen:
+      </p>
+      <h4>Syntax einer CSS Klasse</h4>
+      <pre><code class="language-css">selector {
+  property: value;
+  property2: value2;
+}</code></pre>
+    </div>
+
+    <div class="box">
+      <h2>Einbinden von Styles</h2>
+
+      <h4>Externe Styles (in einer anderen Datei)</h4>
+      <pre><code class="language-html">&lt;link rel="stylesheet" type="text/css" href="/style.css" /&gt;</code></pre>
+
+      <h4>Interne Styles (gesammelt in der selben Datei)</h4>
+      <pre><code class="language-html">&lt;style type="text/css"&gt;
+  div { color: #444;}
+&lt;/style&gt;</code></pre>
+
+      <h4>Inline Styles (Direkt im Element)</h4>
+      <pre><code class="language-html">&lt;tag style="property: value"&gt; &lt;/tag&gt;</code></pre>
+      <div>
+        <p>
+          Hier ist ein gutes
+          <a
+            href="https://wiki.selfhtml.org/wiki/CSS/Tutorials/Einstieg/Stylesheets_einbinden"
+            >Tutorial zum Thema CSS einbinden.</a
+          >
+        </p>
+        <i>Quelle: www.wiki.selfhtml</i>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Selektoren</h2>
+      <p>
+        Ein CSS-Selektor wird verwendet um auszuwählen, auf welche HTML Elemente
+        ein Style angewandt werden soll. Hier sind einige Beispiele:
+      </p>
+
+      <ul>
+        <li>
+          Element Selektor, für alle Elemente eines bestimmten Types (zB
+          <code class="language-html">h1</code>,
+          <code class="language-html">p</code>,
+          <code class="language-html">div</code>, ...)
+        </li>
+        <li>
+          Class Selektor, für alle Elemente die einer bestimmten Klasse
+          zugewiesen wurden (zB
+          <code class="language-css">.box</code> selektiert
+          <code class="language-html">&lt;div class="box"></code>)
+        </li>
+        <li>
+          ID selector, für ein bestimmtes Element mit einer eindeutigen ID (zB
+          <code class="language-css">#navigationBar</code> selektiert
+          <code class="language-html">&lt;div id="navigationBar"></code>)
+        </li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Properties and Values</h2>
+      <p>
+        CSS-Properties (Eigenschaften) definieren den Stil eines HTML-Elements.
+        Hier sind einige gebräuchliche Eigenschaften
+      </p>
+      <ul>
+        <li>
+          <code class="language-css">color</code> legt die Farbe des Textes fest
+        </li>
+        <li>
+          <code class="language-css">background-color</code> legt die
+          Hintergrundfarbe eines Elements fest
+        </li>
+        <li>
+          <code class="language-css">font-size</code> legt die Größe des Textes
+          fest
+        </li>
+        <li>
+          <code class="language-css">padding</code> legt den Innenabstand eines
+          Elements fest
+        </li>
+        <li>
+          <code class="language-css">margin</code> legt den Außenabstand eines
+          Elements fest
+        </li>
+        <li>
+          <code class="language-css">border</code> legt den Rahmen eines
+          Elements fest
+        </li>
+      </ul>
+
+      <p>
+        CSS-Werte (Values) werden verwendet, um den Wert einer CSS-Eigenschaft
+        zu definieren. Hier sind einige Beispiele:
+      </p>
+      <pre><code class="language-css">color: #ffffff;
+background-color: #0099cc;
+font-size: 18px;
+padding: 10px;</code></pre>
+      <div>
+        <p>
+          Hier ist eine<a
+            href="https://wiki.selfhtml.org/wiki/CSS/Eigenschaften"
+          >
+            eine Liste aller CSS Eigenschaften</a
+          >
+          und
+          <a href="https://wiki.selfhtml.org/wiki/CSS/Tutorials/Einstieg/Syntax"
+            >ein gutes Tutorial </a
+          >zu diesem Thema
+        </p>
+        <i>Quelle: www.wiki.selfhtml</i>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Box Modell</h2>
+      <p>
+        Das CSS-Box-Modell beschreibt das Layout eines HTML-Elements. Jedes
+        Element ist von einem unsichtbaren rechteckigen Rahmen umgeben, der aus
+        Innenabstand (Padding), Außenabstand (Margin), Rahmen (Border) und dem
+        eigentlichen Inhalt des Elements besteht.
+      </p>
+
+      <img src="bilder/box-model.png" alt="Box Modell" />
+
+      <p>
+        Das Box-Modell kann mit CSS-Eigenschaften wie <code>padding</code>,
+        <code>margin</code> und <code>border</code> gesteuert werden.
+      </p>
+
+      <p>
+        Im Beispiel oben hat das Element eine Breite von 200 Pixeln und eine
+        Höhe von 150 Pixeln. Der <code>padding</code>-Wert beträgt 20 Pixel und
+        erzeugt einen Innenabstand um den Inhalt des Elements. Der
+        <code>margin</code>-Wert beträgt ebenfalls 20 Pixel und erzeugt einen
+        Außenabstand um das Element. Der <code>border</code>-Wert von 1 Pixel
+        definiert die Dicke des Elementrahmens.
+      </p>
+    </div>
+  </body>
+</html>
