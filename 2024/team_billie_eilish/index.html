@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girls’Day@DigitalService</title>
+  <style>
+    /* Add some basic styles for better appearance */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0 20%;
+      padding: 0;
+      background-color: #000;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    section {
+      padding: 20px;
+      margin: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      flex-grow: 1;
+    }
+
+    .horizontal-section {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+    }
+
+    .header-section {
+      background-image: url('./bilder/billie.jpg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
+      height: 500px;
+      
+    }
+
+    /* CSS classes to play around */
+    .pink {
+      color: #EB95EC;
+      /* Pastel Pink */
+    }
+
+    .green {
+      color: #8DE38C;
+      /* Pastel Blue */
+    }
+
+    .black {
+      background-color: #000;
+      color: #fff;
+      /* Pastel Blue */
+    }
+
+    .white {
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    .purple {
+      color: #BC7AFA;
+      /* Pastel Purple */
+    }
+
+    .blue {
+      color: #6894EC;
+      /* Pastel Green */
+    }
+
+    .yellow {
+      color: #ECD868;
+      /* Pastel Yellow */
+    }
+
+    .orange {
+      color: #ECA068;
+      /* Pastel Orange */
+    }
+
+    .big {
+      font-size: 24px;
+    }
+
+    .bigger {
+      font-size: 30px;
+    }
+
+    .small {
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-section">
+    <span style="margin-top: 200px;display: block;">
+    <h1>Billie Eilish Geheimkonzert</h1>
+    <h2 class="">Versuche dein Glück und gewinne Tickets für Billies Eilishs Geheimkonzert</h2>
+    </span>
+  </header>
+  <div class="horizontal-section">
+    <section id="section4" class="black">
+      <div class="black">
+        <h2 class="bigger">Über Sie</h2>
+        <p class="big">Billie Eilish ist eine Grammy-prämierte Singer-Songwriterin aus den USA, bekannt für ihren einzigartigen Stil und ihre dunklen, introspektiven Texte. Sie wurde 2001 geboren und begann schon früh mit dem Musikmachen.</p>
+        <p class="big">Sie veranstaltet am 03.03.2025 ein pop/metal Geheimkonzert in Berlin und verlost die Tickets</p>
+        <h2 class="green bigger">Mach mit!</h2>
+      </div>
+      <div class="black" style="margin-top: 60px;">
+        <h2 class="bigger">Anlass</h2>
+        <p class="big">Billie spendet alle Einkommen an eine Organisation für Krebskranke. sie war motiviert dies zu tun aufgrund des Todes ihres Vaters der ebenfalls an Krebs gestorben ist. Sie hat ein Spendenlink erstellt, deshalb teilt diese Nachricht gerne für einen guten Zweck.</p>
+      </div>
+    </section>
+    <section id="section5" class="black">
+      <img src="bilder/billie-eilish2.jpg" alt="Beispielbild" width="100%" />
+    </section>
+  </div>
+  <section id="section3" class="black medium">
+    <h2>Infos</h2>
+    <p>Anleitung zur Teilnahme am Gewinnspiel</p>
+    <ul>
+      <li>Kontaktfomular ausfüllen</li>
+      <li>Nutzungsbedingungen bestätigen</li>
+      <li>Kontaktfomular ausfüllen</li>
+      <li>Teilnahmegebühr von 2€ bezahlen</li>
+      <li>Die E-mail Adresse bestätigen und schau ob du ein von 2000 Tickets gewonnen hast</li>
+    </ul>
+    <form>
+      <label for="name" class="green">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Deine Name">
+      <br></br>
+      <label for="email" class="green">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Deine Email">
+      <br></br>
+      <input type="submit" value="Absenden" class="big" style="
+      color: white;
+      background-color: #000;
+      border: 2px solid #108d10;
+  ">
+
+    </form>
+  </section>
+
+  
+</body>
+
+</html>
