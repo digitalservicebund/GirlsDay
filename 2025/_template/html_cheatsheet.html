@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML Cheatsheet</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <link href="assets/prism.css" rel="stylesheet" />
+  <script src="assets/prism.js"></script>
+</head>
+
+<body>
+  <a href="./index.html">Zurück</a>
+  <h1>HTML Elemente - Übersicht</h1>
+
+  <div class="box">
+    <h2>Absätze</h2>
+    <p>
+      Absätze werden verwendet, um zusammengehörige Textblöcke darzustellen.
+      Sie werden durch den <code>&lt;p>&lt;/p></code> tag markiert.
+    </p>
+
+    <table>
+      <tr>
+        <td>
+          <pre><code class="language-html">&lt;p>
+  Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle
+  Buchstaben da sind und wie sie aussehen. Manchmal benutzt man
+  Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften
+  zu testen.
+&lt;/p></code></pre>
+        </td>
+        <td>
+          <p>
+            Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle
+            Buchstaben da sind und wie sie aussehen. Manchmal benutzt man
+            Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften
+            zu testen.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="box">
+    <h2>Überschriften</h2>
+    <p>
+      Überschriften (headings) beschreiben den folgenden Inhalt und werden
+      über den <code>&lt;h1>/&lt;h2>/&lt;h3>/...</code> Tag markiert. Die Zahl
+      ist dabei das Level, je kleiner desto wichtiger.
+    </p>
+
+    <table>
+      <tr>
+        <td>
+          <pre><code class="language-html"
+              >&lt;h1>Überschrift 1&lt;/h1></code
+            ></pre>
+        </td>
+        <td>
+          <h1>Überschrift 1</h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <pre><code class="language-html">&lt;h2>Überschrift 2&lt;/h2></code></pre>
+        </td>
+        <td>
+          <h2>Überschrift 2</h2>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <pre><code class="language-html">&lt;h3>Überschrift 3&lt;/h3></code></pre>
+        </td>
+        <td>
+          <h3>Überschrift 3</h3>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="box">
+    <h2>Listen</h2>
+    <p>
+      Listen werden verwendet, um Elemente auf einer Webseite in einer
+      bestimmten Reihenfolge darzustellen. Es gibt zwei Arten von Listen:
+      ungeordnete Listen und geordnete Listen.
+    </p>
+    <table>
+      <tr>
+        <td>
+          <h3>Ungeordnete Liste</h3>
+          <pre><code class="language-html">&lt;ul>
+  &lt;li>Element 1&lt;/li>
+  &lt;li>Element 2&lt;/li>
+  &lt;li>Element 3&lt;/li>
+&lt;/ul></code></pre>
+        </td>
+        <td>
+          <ul>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Geordnete Liste</h3>
+          <pre><code class="language-html">&lt;ol>
+  &lt;li>Element 1&lt;/li>
+  &lt;li>Element 2&lt;/li>
+  &lt;li>Element 3&lt;/li>
+&lt;/ol></code></pre>
+        </td>
+        <td>
+          <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="box">
+    <h2>Links</h2>
+    <p>
+      Links werden verwendet, um Benutzer auf andere Webseiten oder zu anderen
+      Abschnitten der aktuellen Webseite zu führen.
+    </p>
+    <table>
+      <tr>
+        <td>
+          <pre><code class="language-html">&lt;a href="/index.html"> Relativer Link&lt;/a></code></pre>
+        </td>
+        <td>
+          <a href="/index.html">Relativer Link</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <pre><code class="language-html">&lt;a href="https://digitalservice.bund.de/"> Externer Link&lt;/a></code></pre>
+        </td>
+        <td>
+          <a href="https://digitalservice.bund.de/">Externer Link</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="box">
+    <h2>Bilder</h2>
+    <table>
+      <tr>
+        <td>
+          <p>
+            Bilder werden verwendet, um visuelle Elemente auf einer Webseite
+            darzustellen. Sie können verwendet werden, um Produkte zu
+            präsentieren, Orte zu zeigen oder einfach nur eine visuelle
+            Ergänzung zum Text zu bieten.
+          </p>
+          <pre><code class="language-html">&lt;img src="bilder/bild1.jpg" alt="Beispielbild" /></code></pre>
+        </td>
+        <td>
+          <img src="bilder/bild1.jpg" alt="Beispielbild" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Bilder können auch Links auf andere Seiten sein.</p>
+          <pre><code class="language-html">
+&lt;a href="https://digitalservice.bund.de/">
+  &lt;img src="bilder/bild1.jpg" alt="Beispielbild" />
+&lt;/a></code></pre>
+        </td>
+        <td>
+          <a href="https://digitalservice.bund.de/">
+            <img src="bilder/bild1.jpg" alt="Beispielbild" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="box">
+    <h2>Divisions</h2>
+    <p>
+      Divisions werden verwendet, um verwandte Elemente zu gruppieren. Sie
+      haben keine visuelle Bedeutung, werden aber oft verwendet, um das
+      Styling zu erleichtern.
+    </p>
+
+    <table>
+      <tr>
+        <td>
+          <pre><code class="language-html">
+&lt;div style="border: 1px solid gray">
+  Äußeres div
+  &lt;div style="background-color: aqua">Inneres div&lt;/div>
+&lt;/div></code></pre>
+        </td>
+        <td>
+          <div style="border: 1px solid gray">
+            Äußeres div
+            <div style="background-color: aqua">Inneres div</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
