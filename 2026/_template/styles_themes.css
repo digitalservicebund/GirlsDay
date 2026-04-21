@@ -1,0 +1,640 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: #eee;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+  transition: background-color 0.2s, color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+nav a:hover {
+  background-color: #d4d4d4;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a[aria-current="page"] {
+  color: #000;
+  background-color: #d4d4d4;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Add some basic styles for better appearance */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  padding: 8px 18px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+input[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.horizontal-section {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.header-section {
+  background-image: url("./bilder/bild1.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS classes to play around */
+.pink {
+  color: #eb95ec;
+  /* Pastel Pink */
+}
+
+.green {
+  color: #8de38c;
+  /* Pastel Blue */
+}
+
+.purple {
+  color: #bc7afa;
+  /* Pastel Purple */
+}
+
+.blue {
+  color: #6894ec;
+  /* Pastel Green */
+}
+
+.yellow {
+  color: #ecd868;
+  /* Pastel Yellow */
+}
+
+.orange {
+  color: #eca068;
+  /* Pastel Orange */
+}
+
+.big {
+  font-size: 24px;
+}
+
+.small {
+  font-size: 12px;
+}
+
+@keyframes neon-pulse {
+  0%, 100% { box-shadow: 0 0 5px #ff0080, 0 0 10px #ff0080; }
+  50%       { box-shadow: 0 0 20px #ff0080, 0 0 45px #ff0080, 0 0 80px #ff0080; }
+}
+
+@keyframes fun-wiggle {
+  0%, 100% { transform: rotate(-4deg) scale(1.06); }
+  50%       { transform: rotate(4deg) scale(1.06); }
+}
+
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ============================================================
+   THEMES - So verwendest du ein Theme:
+   Ändere <body> zu <body class="theme-slick">
+   Verfügbare Themes: theme-slick  |  theme-retro  |  theme-fun  |  theme-zine
+   ============================================================ */
+
+
+/* ---- SLICK: VIP Backstage Pass ---- */
+
+.theme-slick {
+  background-color: #08080f;
+  color: #d4c8a8;
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.theme-slick header {
+  background: linear-gradient(180deg, #1c0d35 0%, #100820 60%, #08080f 100%);
+  color: #c9a355;
+  padding: 50px 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(201, 163, 85, 0.25);
+  box-shadow: 0 8px 40px rgba(201, 163, 85, 0.12);
+}
+
+.theme-slick .header-section {
+  background-image: none;
+  box-shadow: 0 8px 40px rgba(201, 163, 85, 0.12);
+}
+
+.theme-slick nav {
+  background-color: #0d0d1a;
+  border-bottom: 1px solid rgba(201, 163, 85, 0.2);
+}
+
+.theme-slick nav a {
+  color: #c9a355;
+  border-color: rgba(201, 163, 85, 0.3);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.theme-slick nav a:hover {
+  background-color: rgba(201, 163, 85, 0.08);
+  box-shadow: 0 0 14px rgba(201, 163, 85, 0.45);
+  transform: translateY(-2px);
+}
+
+.theme-slick section {
+  background-color: #0d0d1a;
+  border: 1px solid rgba(201, 163, 85, 0.15);
+  border-left: 3px solid #c9a355;
+  color: #d4c8a8;
+}
+
+.theme-slick h1 {
+  color: #c9a355;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.theme-slick h2 {
+  color: #c9a355;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.theme-slick input[type="text"],
+.theme-slick input[type="email"] {
+  background: #08080f;
+  color: #d4c8a8;
+  border: 1px solid rgba(201, 163, 85, 0.4);
+  padding: 6px 10px;
+  border-radius: 2px;
+}
+
+.theme-slick input[type="submit"] {
+  background: linear-gradient(to right, #c9a355 50%, #a07830 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  color: #08080f;
+  border: 1px solid #c9a355;
+  cursor: pointer;
+  padding: 8px 22px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-position 0.35s ease, transform 0.15s, box-shadow 0.3s;
+}
+
+.theme-slick input[type="submit"]:hover {
+  background-position: left;
+  box-shadow: 0 0 22px rgba(201, 163, 85, 0.65);
+  transform: translateY(-2px);
+}
+
+.theme-slick input[type="submit"]:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+
+/* ---- RETRO: Vintage Konzert-Poster ---- */
+
+.theme-retro {
+  background-color: #040008;
+  color: #e8d5a0;
+  font-family: 'Courier New', monospace;
+  background-image:
+    radial-gradient(ellipse at 15% 15%, rgba(255, 0, 128, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 85%, rgba(0, 200, 255, 0.1) 0%, transparent 50%),
+    linear-gradient(rgba(255, 0, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 0, 255, 0.04) 1px, transparent 1px);
+  background-size: auto, auto, 30px 30px, 30px 30px;
+}
+
+.theme-retro header {
+  position: relative;
+  overflow: hidden;
+  background: #040008;
+  color: #ff0080;
+  padding: 50px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ff0080;
+  box-shadow: 0 0 60px rgba(255, 0, 128, 0.35);
+}
+
+/* Concert spotlight beam */
+.theme-retro header::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 220%;
+  background: radial-gradient(ellipse at top, rgba(255, 0, 128, 0.22) 0%, rgba(255, 200, 0, 0.08) 35%, transparent 70%);
+  pointer-events: none;
+}
+
+.theme-retro .header-section {
+  background-image: none;
+  box-shadow: 0 0 60px rgba(255, 0, 128, 0.35);
+}
+
+.theme-retro nav {
+  background-color: #040008;
+  border-top: 2px solid #ffff00;
+  border-bottom: 2px solid #ffff00;
+}
+
+.theme-retro nav a {
+  color: #ffff00;
+  border: 1px solid #ffff00;
+  text-shadow: 0 0 6px #ffff00;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.theme-retro nav a:hover {
+  background-color: rgba(255, 255, 0, 0.08);
+  box-shadow: 0 0 14px rgba(255, 255, 0, 0.7);
+  text-shadow: 0 0 14px #ffff00;
+  transform: translateY(-2px);
+}
+
+.theme-retro section {
+  background-color: rgba(4, 0, 8, 0.95);
+  border: 2px solid;
+  color: #e8d5a0;
+}
+
+.theme-retro #section1 { border-color: #ff0080; box-shadow: 0 0 14px rgba(255, 0, 128, 0.25); }
+.theme-retro #section2 { border-color: #00ffff; box-shadow: 0 0 14px rgba(0, 255, 255, 0.25); }
+.theme-retro #section3 { border-color: #ffff00; box-shadow: 0 0 14px rgba(255, 255, 0, 0.25); }
+.theme-retro #section4 { border-color: #ff0080; box-shadow: 0 0 14px rgba(255, 0, 128, 0.25); }
+.theme-retro #section5 { border-color: #00ffff; box-shadow: 0 0 14px rgba(0, 255, 255, 0.25); }
+
+.theme-retro h1 {
+  color: #ff0080;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-shadow: 0 0 10px #ff0080, 0 0 30px #ff0080, 0 0 60px #ff0080;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.theme-retro h2 {
+  color: #00ffff;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-shadow: 0 0 8px #00ffff, 0 0 20px #00ffff;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.theme-retro input[type="text"],
+.theme-retro input[type="email"] {
+  background: #040008;
+  color: #e8d5a0;
+  border: 1px solid #ffff00;
+  padding: 6px 8px;
+}
+
+.theme-retro input[type="submit"] {
+  background: #040008;
+  color: #ff0080;
+  border: 2px solid #ff0080;
+  cursor: pointer;
+  padding: 8px 20px;
+  text-shadow: 0 0 5px #ff0080;
+  box-shadow: 0 0 12px rgba(255, 0, 128, 0.5);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: box-shadow 0.2s, color 0.2s;
+}
+
+.theme-retro input[type="submit"]:hover {
+  animation: neon-pulse 1.2s ease-in-out infinite;
+  color: white;
+}
+
+.theme-retro input[type="submit"]:active {
+  animation: none;
+  box-shadow: 0 0 5px #ff0080;
+}
+
+
+/* ---- FUN: Pop-Konzert / Festival ---- */
+
+.theme-fun {
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb, #a6c0fe, #f6d365, #ff9a9e);
+  background-size: 400% 400%;
+  animation: gradient-shift 10s ease infinite;
+  font-family: 'Pacifico', 'Comic Sans MS', cursive;
+  color: #3d005a;
+}
+
+.theme-fun header {
+  background: linear-gradient(135deg, #f953c6 0%, #b91d73 50%, #ff6b6b 100%);
+  color: white;
+  border-radius: 0 0 40px 40px;
+  padding: 40px 20px;
+  box-shadow: 0 8px 30px rgba(249, 83, 198, 0.5);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.theme-fun .header-section {
+  background-image: none;
+  box-shadow: 0 8px 30px rgba(249, 83, 198, 0.5);
+}
+
+.theme-fun nav {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  margin: 12px 20px;
+  border-bottom: none;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.theme-fun nav a {
+  color: #3d005a;
+  border-color: rgba(61, 0, 90, 0.2);
+  border-radius: 20px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.theme-fun nav a:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.theme-fun section {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  border: 3px solid rgba(255, 255, 255, 0.85);
+}
+
+.theme-fun #section1 { background: rgba(255, 249, 196, 0.75); }
+.theme-fun #section2 { background: rgba(200, 230, 201, 0.75); }
+.theme-fun #section3 { background: rgba(187, 222, 251, 0.75); }
+.theme-fun #section4 { background: rgba(248, 187, 208, 0.75); }
+.theme-fun #section5 { background: rgba(225, 190, 231, 0.75); }
+
+.theme-fun h1 {
+  background: linear-gradient(135deg, #f953c6, #ff6b6b, #feca57, #48dbfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.12));
+}
+
+.theme-fun h2 {
+  color: #b91d73;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.theme-fun input[type="text"],
+.theme-fun input[type="email"] {
+  border: 2px solid #f953c6;
+  border-radius: 20px;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #3d005a;
+  outline: none;
+}
+
+.theme-fun input[type="submit"] {
+  background: linear-gradient(135deg, #f953c6, #b91d73);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 26px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1rem;
+  box-shadow: 0 4px 18px rgba(249, 83, 198, 0.5);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.theme-fun input[type="submit"]:hover {
+  animation: fun-wiggle 0.45s ease-in-out infinite;
+  box-shadow: 0 8px 28px rgba(249, 83, 198, 0.7);
+}
+
+.theme-fun input[type="submit"]:active {
+  animation: none;
+  transform: scale(0.94) translateY(2px);
+  box-shadow: 0 2px 8px rgba(249, 83, 198, 0.4);
+}
+
+
+/* ---- ZINE: Neobrutalist / PostHog-Style Retro ---- */
+
+.theme-zine {
+  background-color: #fdf7e8;
+  background-image: radial-gradient(#1a111118 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  color: #1a1111;
+  font-family: 'Archivo Black', 'Arial Black', sans-serif;
+}
+
+.theme-zine header {
+  background: #1a1111;
+  color: #f9c846;
+  padding: 50px 20px;
+  text-align: center;
+  border-bottom: 3px solid #1a1111;
+  box-shadow: none;
+}
+
+.theme-zine .header-section {
+  background-image: none;
+  box-shadow: none;
+}
+
+.theme-zine nav {
+  background-color: #1a1111;
+  border-bottom: 3px solid #1a1111;
+}
+
+.theme-zine nav a {
+  color: #fdf7e8;
+  border: 2px solid #fdf7e8;
+  border-radius: 3px;
+  font-size: 0.82rem;
+  letter-spacing: 0.5px;
+  transition: background-color 0.12s, color 0.12s, transform 0.1s, box-shadow 0.1s;
+}
+
+.theme-zine nav a:hover {
+  background-color: #f9c846;
+  color: #1a1111;
+  border-color: #f9c846;
+  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px 0 rgba(253, 247, 232, 0.5);
+}
+
+.theme-zine section {
+  background-color: #ffffff;
+  border: 2px solid #1a1111;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0 #1a1111;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.theme-zine section:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 #1a1111;
+}
+
+.theme-zine h1 {
+  color: #f9c846;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.theme-zine h2 {
+  color: #1a1111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #f9c846;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.theme-zine input[type="text"],
+.theme-zine input[type="email"] {
+  background: #fdf7e8;
+  color: #1a1111;
+  border: 2px solid #1a1111;
+  padding: 6px 10px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 0 #1a1111;
+  transition: box-shadow 0.12s, border-color 0.12s;
+}
+
+.theme-zine input[type="text"]:focus,
+.theme-zine input[type="email"]:focus {
+  outline: none;
+  border-color: #f9c846;
+  box-shadow: 3px 3px 0 #f9c846;
+}
+
+.theme-zine input[type="submit"] {
+  background: #f9c846;
+  color: #1a1111;
+  border: 2px solid #1a1111;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px 22px;
+  font-family: 'Archivo Black', 'Arial Black', sans-serif;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 4px 4px 0 #1a1111;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.theme-zine input[type="submit"]:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #1a1111;
+}
+
+.theme-zine input[type="submit"]:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #1a1111;
+}
